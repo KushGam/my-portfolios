@@ -1,0 +1,186 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+  }
+  
+  /* Global Section Style */
+  section {
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+  }
+  
+  /* Alternate backgrounds */
+  section:nth-of-type(even) {
+    background-color: #f0f2f7;
+  }
+  
+  /* Section Headings */
+  section h2 {
+    font-size: 2rem;
+    color: #5e3474;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  section h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: #5e3474;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background: linear-gradient(to bottom right, #f9f3ff, #fff);
+    box-shadow: none;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #5e3474;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .hero p {
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .hero-links {
+    margin-top: 1.8rem;
+  }
+  
+  .hero-links a {
+    padding: 0.7rem 1.4rem;
+    margin: 0 0.5rem;
+    background-color: #5e3474;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .hero-links a:hover {
+    background-color: #4b2663;
+    transform: scale(1.05);
+  }
+  
+  /* Skills Styling */
+  .skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0;
+  }
+  
+  .skills li {
+    background-color: #e5e0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  /* Project Cards */
+  .projects .project {
+    background-color: #fff;
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    transition: transform 0.2s ease;
+  }
+  
+  .projects .project:hover {
+    transform: translateY(-4px);
+  }
+  
+  .projects a {
+    display: inline-block;
+    margin-top: 0.6rem;
+    color: #5e3474;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .projects a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Resume Button */
+  .resume .btn {
+    display: inline-block;
+    background-color: #5e3474;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume .btn:hover {
+    background-color: #4b2663;
+  }
+  
+  /* Contact Section */
+  .contact a {
+    color: #5e3474;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Enhancements */
+  @media (max-width: 768px) {
+    section {
+      padding: 2rem 1rem;
+      margin: 1.5rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.4rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.2rem;
+    }
+  }
+  section h2::after {
+    display: none !important;
+  }
+  
