@@ -1,0 +1,138 @@
+{
+  "id": "plants",
+  "title": "Plants Pack",
+  "items": [
+    {
+      "id": "rose",
+      "title": "Rose",
+      "theme": "PLANTS",
+      "tint": "#EF4444"
+    },
+    {
+      "id": "sunflower",
+      "title": "Sunflower",
+      "theme": "PLANTS",
+      "tint": "#FACC15"
+    },
+    {
+      "id": "tulip",
+      "title": "Tulip",
+      "theme": "PLANTS",
+      "tint": "#FB7185"
+    },
+    {
+      "id": "daisy",
+      "title": "Daisy",
+      "theme": "PLANTS",
+      "tint": "#FDE68A"
+    },
+    {
+      "id": "lotus",
+      "title": "Lotus",
+      "theme": "PLANTS",
+      "tint": "#F472B6"
+    },
+    {
+      "id": "lavender",
+      "title": "Lavender",
+      "theme": "PLANTS",
+      "tint": "#A78BFA"
+    },
+    {
+      "id": "hibiscus",
+      "title": "Hibiscus",
+      "theme": "PLANTS",
+      "tint": "#F43F5E"
+    },
+    {
+      "id": "orchid",
+      "title": "Orchid",
+      "theme": "PLANTS",
+      "tint": "#C084FC"
+    },
+    {
+      "id": "cherry_blossom",
+      "title": "Cherry Blossom",
+      "theme": "PLANTS",
+      "tint": "#F9A8D4"
+    },
+    {
+      "id": "cactus",
+      "title": "Cactus",
+      "theme": "PLANTS",
+      "tint": "#22C55E"
+    },
+    {
+      "id": "bamboo",
+      "title": "Bamboo",
+      "theme": "PLANTS",
+      "tint": "#65A30D"
+    },
+    {
+      "id": "maple_tree",
+      "title": "Maple Tree",
+      "theme": "PLANTS",
+      "tint": "#EA580C"
+    },
+    {
+      "id": "oak_tree",
+      "title": "Oak Tree",
+      "theme": "PLANTS",
+      "tint": "#166534"
+    },
+    {
+      "id": "palm_tree",
+      "title": "Palm Tree",
+      "theme": "PLANTS",
+      "tint": "#10B981"
+    },
+    {
+      "id": "pine_tree",
+      "title": "Pine Tree",
+      "theme": "PLANTS",
+      "tint": "#065F46"
+    },
+    {
+      "id": "fern",
+      "title": "Fern",
+      "theme": "PLANTS",
+      "tint": "#84CC16"
+    },
+    {
+      "id": "aloe",
+      "title": "Aloe",
+      "theme": "PLANTS",
+      "tint": "#22C55E"
+    },
+    {
+      "id": "bonsai",
+      "title": "Bonsai",
+      "theme": "PLANTS",
+      "tint": "#16A34A"
+    },
+    {
+      "id": "mushroom",
+      "title": "Mushroom",
+      "theme": "PLANTS",
+      "tint": "#E11D48"
+    },
+    {
+      "id": "wheat",
+      "title": "Wheat",
+      "theme": "PLANTS",
+      "tint": "#F59E0B"
+    },
+    {
+      "id": "corn",
+      "title": "Corn",
+      "theme": "PLANTS",
+      "tint": "#FCD34D"
+    },
+    {
+      "id": "pumpkin",
+      "title": "Pumpkin",
+      "theme": "PLANTS",
+      "tint": "#F97316"
+    }
+  ]
+}

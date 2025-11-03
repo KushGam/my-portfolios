@@ -1,0 +1,138 @@
+{
+  "id": "animals",
+  "title": "Animals Pack",
+  "items": [
+    {
+      "id": "dolphin",
+      "title": "Dolphin",
+      "theme": "ANIMALS",
+      "tint": "#54D0FF"
+    },
+    {
+      "id": "lion",
+      "title": "Lion",
+      "theme": "ANIMALS",
+      "tint": "#FF9F1C"
+    },
+    {
+      "id": "tiger",
+      "title": "Tiger",
+      "theme": "ANIMALS",
+      "tint": "#FF6B6B"
+    },
+    {
+      "id": "elephant",
+      "title": "Elephant",
+      "theme": "ANIMALS",
+      "tint": "#9CA3AF"
+    },
+    {
+      "id": "giraffe",
+      "title": "Giraffe",
+      "theme": "ANIMALS",
+      "tint": "#FBBF24"
+    },
+    {
+      "id": "zebra",
+      "title": "Zebra",
+      "theme": "ANIMALS",
+      "tint": "#111827"
+    },
+    {
+      "id": "panda",
+      "title": "Panda",
+      "theme": "ANIMALS",
+      "tint": "#E5E7EB"
+    },
+    {
+      "id": "koala",
+      "title": "Koala",
+      "theme": "ANIMALS",
+      "tint": "#A7F3D0"
+    },
+    {
+      "id": "kangaroo",
+      "title": "Kangaroo",
+      "theme": "ANIMALS",
+      "tint": "#F59E0B"
+    },
+    {
+      "id": "hippo",
+      "title": "Hippo",
+      "theme": "ANIMALS",
+      "tint": "#93C5FD"
+    },
+    {
+      "id": "rhino",
+      "title": "Rhino",
+      "theme": "ANIMALS",
+      "tint": "#64748B"
+    },
+    {
+      "id": "bear",
+      "title": "Bear",
+      "theme": "ANIMALS",
+      "tint": "#92400E"
+    },
+    {
+      "id": "fox",
+      "title": "Fox",
+      "theme": "ANIMALS",
+      "tint": "#FB923C"
+    },
+    {
+      "id": "wolf",
+      "title": "Wolf",
+      "theme": "ANIMALS",
+      "tint": "#6B7280"
+    },
+    {
+      "id": "deer",
+      "title": "Deer",
+      "theme": "ANIMALS",
+      "tint": "#A3E635"
+    },
+    {
+      "id": "monkey",
+      "title": "Monkey",
+      "theme": "ANIMALS",
+      "tint": "#A16207"
+    },
+    {
+      "id": "camel",
+      "title": "Camel",
+      "theme": "ANIMALS",
+      "tint": "#FDE68A"
+    },
+    {
+      "id": "crocodile",
+      "title": "Crocodile",
+      "theme": "ANIMALS",
+      "tint": "#34D399"
+    },
+    {
+      "id": "turtle",
+      "title": "Turtle",
+      "theme": "ANIMALS",
+      "tint": "#10B981"
+    },
+    {
+      "id": "penguin",
+      "title": "Penguin (Animal)",
+      "theme": "ANIMALS",
+      "tint": "#60A5FA"
+    },
+    {
+      "id": "seal",
+      "title": "Seal",
+      "theme": "ANIMALS",
+      "tint": "#67E8F9"
+    },
+    {
+      "id": "otter",
+      "title": "Otter",
+      "theme": "ANIMALS",
+      "tint": "#F59E0B"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.expo/
+.expo-shared/
+
+# Build outputs
+dist/
+build/
+*.apk
+*.aab
+*.ipa
+*.dmg
+
+# OS files
+.DS_Store
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Android
+android/.gradle/
+android/app/build/
+android/.idea/
+android/local.properties
+*.jks
+*.keystore
+
+# iOS
+ios/Pods/
+ios/build/
+ios/*.xcworkspace
+ios/*.xcuserdata
+
+# Metro bundler
+.metro-health-check*
+
+# Misc
+*.orig
+.cache/

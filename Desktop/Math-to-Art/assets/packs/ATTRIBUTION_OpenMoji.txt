@@ -1,0 +1,4 @@
+OpenMoji icons (black SVG set) used in this app.
+License: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+Source: https://github.com/hfg-gmuend/openmoji (OpenMoji 16.0)
+Attribution: OpenMoji — Open source emojis for designers, developers and everyone else.
