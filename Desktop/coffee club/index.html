@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Club - Artisan Coffee & Cozy Atmosphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">☕ Coffee Club</div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Coffee Club</h1>
+            <p class="hero-subtitle">Coffee • Breakfast • Waffles • Korean Food</p>
+            <a href="#menu" class="btn-primary">Explore Our Menu</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p class="section-subtitle">Coffee • Breakfast • Waffles • Korean Food</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image-section">
+                    <img src="background.png" alt="Coffee Club Interior" class="about-image">
+                    <img src="background2.png" alt="Coffee Club Atmosphere" class="about-image">
+                </div>
+                <div class="about-text">
+                    <p>At Coffee Club, we believe that great coffee is more than just a beverage—it's an experience. Located in Raniban Townplanning, Kathmandu, we serve premium coffee, delicious breakfast, authentic Korean food, and our famous waffles.</p>
+                    <p>We've created a warm, welcoming, pet-friendly space where friends gather, ideas flow, and memories are made. Whether you're starting your day with breakfast, enjoying Korean cuisine, or unwinding with a perfect cup of coffee, we're here to make every moment special. We also offer takeaway and home delivery for your convenience!</p>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">🐾</div>
+                            <h3>Pet-Friendly</h3>
+                            <p>Bring your furry friends!</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🥡</div>
+                            <h3>Takeaway & Delivery</h3>
+                            <p>Enjoy at home or on the go</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">☕</div>
+                            <h3>Korean Food</h3>
+                            <p>Authentic Korean cuisine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p class="section-subtitle">Discover your perfect cup</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="coffee">Coffee</button>
+                <button class="tab-btn" data-category="breakfast">Breakfast</button>
+                <button class="tab-btn" data-category="waffles">Waffles</button>
+                <button class="tab-btn" data-category="korean">Korean Food</button>
+                <button class="tab-btn" data-category="tea">Tea</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3>Espresso</h3>
+                        <p>Rich, bold, and perfectly balanced</p>
+                        <span class="price">Rs. 220</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso with steamed milk and foam</p>
+                        <span class="price">Rs. 280</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3>Latte</h3>
+                        <p>Smooth espresso with velvety steamed milk</p>
+                        <span class="price">Rs. 300</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3>Americano</h3>
+                        <p>Espresso with hot water</p>
+                        <span class="price">Rs. 240</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3>Mocha</h3>
+                        <p>Espresso, chocolate, and steamed milk</p>
+                        <span class="price">Rs. 320</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3>Cold Brew</h3>
+                        <p>Smooth, refreshing, and full-bodied</p>
+                        <span class="price">Rs. 280</span>
+                    </div>
+                </div>
+
+                <!-- Breakfast Items -->
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-content">
+                        <h3>Classic Breakfast</h3>
+                        <p>Eggs, toast, and your choice of sides</p>
+                        <span class="price">Rs. 450</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-content">
+                        <h3>Pancake Stack</h3>
+                        <p>Fluffy pancakes with maple syrup</p>
+                        <span class="price">Rs. 380</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-content">
+                        <h3>Avocado Toast</h3>
+                        <p>Fresh avocado on artisan bread</p>
+                        <span class="price">Rs. 420</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-content">
+                        <h3>Breakfast Sandwich</h3>
+                        <p>Egg, cheese, and bacon on croissant</p>
+                        <span class="price">Rs. 350</span>
+                    </div>
+                </div>
+
+                <!-- Waffles -->
+                <div class="menu-item" data-category="waffles">
+                    <div class="menu-item-content">
+                        <h3>Classic Waffle</h3>
+                        <p>Golden waffle with butter and syrup</p>
+                        <span class="price">Rs. 320</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="waffles">
+                    <div class="menu-item-content">
+                        <h3>Chocolate Waffle</h3>
+                        <p>Rich chocolate waffle with toppings</p>
+                        <span class="price">Rs. 380</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="waffles">
+                    <div class="menu-item-content">
+                        <h3>Fruit Waffle</h3>
+                        <p>Waffle topped with fresh seasonal fruits</p>
+                        <span class="price">Rs. 420</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="waffles">
+                    <div class="menu-item-content">
+                        <h3>Belgian Waffle</h3>
+                        <p>Authentic Belgian-style waffle</p>
+                        <span class="price">Rs. 350</span>
+                    </div>
+                </div>
+
+                <!-- Korean Food -->
+                <div class="menu-item" data-category="korean">
+                    <div class="menu-item-content">
+                        <h3>Kimchi Fried Rice</h3>
+                        <p>Spicy kimchi with fried rice</p>
+                        <span class="price">Rs. 450</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="korean">
+                    <div class="menu-item-content">
+                        <h3>Bibimbap</h3>
+                        <p>Mixed rice with vegetables and egg</p>
+                        <span class="price">Rs. 550</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="korean">
+                    <div class="menu-item-content">
+                        <h3>Korean BBQ</h3>
+                        <p>Grilled meat with sides</p>
+                        <span class="price">Rs. 680</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="korean">
+                    <div class="menu-item-content">
+                        <h3>Bulgogi</h3>
+                        <p>Marinated beef with rice</p>
+                        <span class="price">Rs. 620</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="korean">
+                    <div class="menu-item-content">
+                        <h3>Korean Ramen</h3>
+                        <p>Spicy Korean-style ramen</p>
+                        <span class="price">Rs. 380</span>
+                    </div>
+                </div>
+
+                <!-- Tea Items -->
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-content">
+                        <h3>Green Tea</h3>
+                        <p>Light and refreshing</p>
+                        <span class="price">Rs. 180</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-content">
+                        <h3>Earl Grey</h3>
+                        <p>Classic black tea with bergamot</p>
+                        <span class="price">Rs. 200</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-content">
+                        <h3>Chai Latte</h3>
+                        <p>Spiced tea with steamed milk</p>
+                        <span class="price">Rs. 250</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p class="section-subtitle">A glimpse into our cozy space</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="background.png" alt="Coffee Club Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="background2.png" alt="Coffee Club Atmosphere">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3211.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3212.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3213.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3214.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3215.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3218.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3219.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3220.jpg" alt="Coffee Club">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_3222.jpg" alt="Coffee Club">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="instagram">
+        <div class="container">
+            <div class="section-header">
+                <h2>Follow Us</h2>
+                <p class="section-subtitle">See what's brewing on Instagram</p>
+            </div>
+            <div class="instagram-cta">
+                <p>Follow <a href="https://www.instagram.com/coffe_eclub2022" target="_blank" rel="noopener noreferrer">@coffe_eclub2022</a> for daily updates, special offers, and behind-the-scenes content!</p>
+                <a href="https://www.instagram.com/coffe_eclub2022" target="_blank" rel="noopener noreferrer" class="btn-primary">Follow on Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+                <p class="section-subtitle">We'd love to see you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Location</h3>
+                        <p>Raniban Townplanning<br>Kathmandu, Nepal 44600</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🕐 Hours</h3>
+                        <p>Everyday: 7:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>✨ Features</h3>
+                        <p>🐾 Pet-Friendly Cafe<br>
+                           🥡 Takeaway Available<br>
+                           🚚 Home Delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Coffee Club. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/coffe_eclub2022" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.tiktok.com/@coffe_eclub2022" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>☕ Coffee Club Chat</h3>
+                <button class="chatbot-close" id="chatbotClose">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot-message">
+                    <div class="message-content">
+                        <p>Hello! Welcome to Coffee Club! ☕ How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbotInput" placeholder="Type your message..." autocomplete="off">
+                <button id="chatbotSend">Send</button>
+            </div>
+        </div>
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <span>💬</span>
+            <span class="chatbot-badge">1</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
