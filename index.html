@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kushal Gautam - Software Developer | Systems & IT Support Engineer">
+  <title>Kushal Gautam | Software Developer & IT Support Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Home">KG</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="hamburger" aria-label="Toggle menu" id="hamburgerBtn" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Mobile navigation menu">
+    <div class="sidebar-header">
+      <a href="#home" class="sidebar-logo">KG</a>
+      <button class="sidebar-close" aria-label="Close menu" id="sidebarClose">
+        <span>×</span>
+      </button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#about" class="sidebar-link">About</a>
+      <a href="#skills" class="sidebar-link">Skills</a>
+      <a href="#experience" class="sidebar-link">Experience</a>
+      <a href="#projects" class="sidebar-link">Projects</a>
+      <a href="#contact" class="sidebar-link">Contact</a>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle sidebar-theme-toggle" aria-label="Toggle dark mode" id="sidebarThemeToggle">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </aside>
+
+ <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background"></div>
+    <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-image-wrapper">
+        <img src="kushal.png" alt="Kushal Gautam - IT Support Specialist" class="hero-photo">
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-name">Kushal Gautam</h1>
+        <p class="hero-role">Software Developer | Systems & IT Support Engineer</p>
+        <p class="hero-summary">
+          I'm a Software Developer with hands-on IT Support experience, delivering Level 1–2 technical support across enterprise and small business environments. 
+          Alongside supporting live systems, I design, build, and deploy real-world web applications and business platforms, combining software engineering skills with practical knowledge of production systems.
+        </p>
+        <div class="hero-location">📍 Sydney, NSW · Open to Relocate</div>
+      <div class="hero-cta">
+          <a href="./assets/Kushal_Gautam_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/kushal-gautam-9257b316a" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <span>·</span>
+          <a href="https://github.com/KushGam" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <span>·</span>
+          <a href="mailto:gautamkushal34@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="content-card fade-in">
+        <p>
+          I'm a Software Developer with hands-on IT Support experience, delivering Level 1–2 technical support across enterprise and 
+          small business environments. Alongside supporting live systems, I design, build, and deploy real-world web applications and 
+          business platforms, combining software engineering skills with practical knowledge of production systems.
+        </p>
+        <p>
+          With a Bachelor's degree in Information Technology (Software Development), I bring strong proficiency in JavaScript, TypeScript, 
+          Node.js, React, and SQL, along with a solid foundation in backend architecture and system design. My IT support background provides 
+          practical knowledge of IT service management principles, including incident management, problem resolution, and technical documentation.
+        </p>
+        <p class="highlight">
+          <strong>Seeking software development opportunities where I can leverage my full-stack development skills and production system 
+          experience to build robust, scalable applications.</strong>
+        </p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">95%+</div>
+            <div class="stat-label">SLA Compliance</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Users Supported</div>
+      </div>
+          <div class="stat-item">
+            <div class="stat-number">5K+</div>
+            <div class="stat-label">Tickets Resolved</div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Research Alignment Section -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2 class="section-title">Research Alignment</h2>
+      <div class="research-content fade-in">
+        <p>
+          I am interested in applied research that connects software engineering with real-world system behavior. My academic background in Information Technology (Software Development), combined with hands-on experience building full-stack web applications and supporting live production environments, aligns with research in software systems, cloud-based applications, and data-driven platforms.
+        </p>
+        <p>
+          Through developing, deploying, and maintaining real-world systems, I have developed a strong interest in how software behaves under practical constraints such as scalability, performance, reliability, and maintainability.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category fade-in">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>SQL (PostgreSQL, MySQL)</li>
+          </ul>
+    </div>
+        <div class="skill-category fade-in">
+          <h3>Software Development</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>RESTful APIs</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Backend system architecture and API design</li>
+          </ul>
+      </div>
+        <div class="skill-category fade-in">
+          <h3>Data & Systems</h3>
+          <ul>
+            <li>Relational database design and normalization</li>
+            <li>Query optimization and data modeling</li>
+            <li>Authentication and authorization workflows</li>
+          </ul>
+      </div>
+        <div class="skill-category fade-in">
+          <h3>Cloud & Tools</h3>
+          <ul>
+            <li>AWS (EC2, S3 – foundational)</li>
+            <li>Microsoft Azure Fundamentals</li>
+            <li>Git, GitHub</li>
+            <li>Linux</li>
+            <li>Agile development and technical documentation</li>
+          </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item fade-in">
+          <div class="exp-header">
+            <h3>Help Desk Analyst (Contract)</h3>
+            <div class="exp-meta">
+              <span class="exp-company">Kyocera Document Solutions</span>
+              <span class="exp-date">Aug 2025 – Dec 2025</span>
+      </div>
+            <div class="exp-location">North Ryde, NSW</div>
+      </div>
+          <ul class="exp-duties">
+            <li>Delivered Level 1 support for hardware/software products across enterprise environments</li>
+            <li>Managed incidents/requests in Salesforce with 95%+ SLA achievement</li>
+            <li>Troubleshot printing issues: drivers, firmware, queues, connectivity, app conflicts</li>
+            <li>Escalated complex issues to L2 and coordinated field support</li>
+            <li>Documented resolutions for knowledge management and compliance</li>
+        </ul>
+      </div>
+      
+        <div class="experience-item fade-in">
+          <div class="exp-header">
+            <h3>IT Support Technician</h3>
+            <div class="exp-meta">
+              <span class="exp-company">Hidden Grounds Brasserie</span>
+              <span class="exp-date">Nov 2023 – Aug 2025</span>
+      </div>
+            <div class="exp-location">Sydney, NSW</div>
+      </div>
+          <ul class="exp-duties">
+            <li>Administered Microsoft 365 and Active Directory for onboarding, licensing, access resets</li>
+            <li>Supported Windows, macOS, POS terminals, printers, payment systems, and networking equipment</li>
+            <li>Followed service desk workflows aligned with SLAs</li>
+            <li>Improved IT asset tracking and reduced recurring device issues</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-slideshow">
+        <div class="projects-stack">
+          <div class="project-card active" data-index="0">
+            <h3>Fresh Mart Loyalty System</h3>
+            <p class="project-tag">Capstone Project</p>
+            <p>Designed and developed a full-stack loyalty management system with secure authentication, role-based access, and real-time data processing. Built and optimized backend database schemas and SQL queries to improve performance and reliability. Applied modular software architecture and RESTful design principles. Delivered the project through full development lifecycle, from requirements analysis to deployment.</p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+              <span>REST APIs</span>
+            </div>
+            <a href="https://github.com/KushGam/fresh-mart-loyalty-portal.git" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          </div>
+
+          <div class="project-card" data-index="1">
+            <h3>Stamzy – QR-Based Loyalty Platform</h3>
+            <p class="project-tag">Live Product</p>
+            <p>Developed a cloud-based SaaS platform enabling QR-driven customer engagement for cafés and small businesses. Implemented scalable backend logic using managed databases and serverless services. Deployed, tested, and maintained the application in real business environments. Iteratively improved system performance and usability based on live feedback.</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>Supabase</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="https://www.stamzy.com" target="_blank" rel="noopener" class="project-link">View Live →</a>
+          </div>
+
+          <div class="project-card" data-index="2">
+            <h3>Kusaro Tech</h3>
+            <p class="project-tag">Business Platform</p>
+            <p>Simple technology solutions for small businesses - websites, QR menus, and offline POS systems designed for cafés and local businesses. Built with a focus on simplicity, affordability, and reliability. Features mobile-responsive design, WhatsApp integration, and offline-first architecture for businesses in Nepal operating from Australia.</p>
+              <div class="project-tech">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Web Development</span>
+              </div>
+            <a href="https://kusaro.vercel.app" target="_blank" rel="noopener" class="project-link">View Live →</a>
+              </div>
+
+          <div class="project-card" data-index="3">
+            <h3>CredPal – FinTech Application</h3>
+            <p class="project-tag">In Progress</p>
+            <p>Building a fintech platform to evaluate user credibility using alternative data sources. Developing secure RESTful APIs and backend validation logic. Designing data models focused on scalability, integrity, and maintainability.</p>
+            <div class="project-tech">
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="project-link" style="opacity: 0.6; cursor: not-allowed;">Coming Soon →</a>
+          </div>
+          
+          <div class="project-card" data-index="4">
+            <h3>Gilly's Café</h3>
+            <p class="project-tag">Freelance Website</p>
+            <p>Production website for local café to improve digital presence and customer engagement.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+            <a href="https://www.gillyscafe.com" target="_blank" rel="noopener" class="project-link">View Live →</a>
+          </div>
+
+          <div class="project-card" data-index="5">
+            <h3>The Coffee Club</h3>
+            <p class="project-tag">Demo Menu Interface</p>
+            <p>Modern café-style digital menu interface built as a freelance/demo project.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+            <a href="https://coffeeclub-theta.vercel.app" target="_blank" rel="noopener" class="project-link">View Live →</a>
+          </div>
+        </div>
+        <div class="projects-navigation">
+          <button class="project-nav-btn prev" aria-label="Previous project" id="prevProject">
+            <span>←</span>
+          </button>
+          <div class="project-dots" id="projectDots"></div>
+          <button class="project-nav-btn next" aria-label="Next project" id="nextProject">
+            <span>→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="experience-list">
+        <div class="experience-item fade-in">
+          <div class="exp-header">
+            <h3>Bachelor of Information Technology (Software Development)</h3>
+            <div class="exp-meta">
+              <span class="exp-company">Federation University Australia</span>
+              <span class="exp-date">2022 – 2025</span>
+            </div>
+        </div>
+          <div class="exp-duties">
+            <h4 style="margin-top: 1rem; margin-bottom: 0.75rem; color: var(--accent); font-size: 1.1rem;">Relevant Coursework:</h4>
+            <ul style="list-style: none; padding-left: 0;">
+              <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                Data Structures and Algorithms
+              </li>
+              <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                Cloud Infrastructure and Services
+              </li>
+              <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                Agile Software Development
+              </li>
+              <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                Database Systems
+              </li>
+              <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                Emerging Information Systems
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">Certifications & Continuous Learning</h2>
+      <div class="certifications-grid">
+        <div class="certification-item fade-in">
+          <div class="cert-icon">☁️</div>
+          <h3>AWS Cloud Foundations</h3>
+          <p class="cert-year">2025</p>
+          <p class="cert-status completed">Completed</p>
+        </div>
+        <div class="certification-item fade-in">
+          <div class="cert-icon">🔧</div>
+          <h3>Google IT Support Professional Certificate</h3>
+          <p class="cert-year">2025</p>
+          <p class="cert-status completed">Completed</p>
+        </div>
+        <div class="certification-item fade-in">
+          <div class="cert-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width: 48px; height: 48px; filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.3));">
+          </div>
+          <h3>Python Programming</h3>
+          <p class="cert-year">Ongoing</p>
+          <p class="cert-status learning">Actively Learning</p>
+          <p class="cert-focus">Data Analysis & Scripting</p>
+        </div>
+        <div class="certification-item fade-in">
+          <div class="cert-icon">📋</div>
+          <h3>ITIL® 4 Foundation</h3>
+          <p class="cert-year">Expected 2026</p>
+          <p class="cert-status in-progress">In Progress</p>
+        </div>
+        <div class="certification-item fade-in">
+          <div class="cert-icon">☁️</div>
+          <h3>Microsoft Azure Administrator (AZ-104)</h3>
+          <p class="cert-year">Expected 2026</p>
+          <p class="cert-status in-progress">In Progress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live JS Demo Widget -->
+  <section id="demo" class="section">
+    <div class="container">
+      <h2 class="section-title">Live JS Demo</h2>
+      <div class="demo-widget fade-in" id="demoWidget">
+        <button class="demo-close-btn" id="demoCloseBtn" aria-label="Close demo widget" title="Close widget">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="demo-header">
+          <div class="demo-icon">🎯</div>
+          <div>
+            <h3>Ticket Triage Simulator</h3>
+            <p class="demo-description">Select an issue type and priority to see recommended action and SLA target.</p>
+          </div>
+        </div>
+        <div class="demo-controls">
+          <div class="demo-field">
+            <label for="issueType">Issue Type:</label>
+            <select id="issueType">
+              <option value="">Select issue type...</option>
+              <option value="hardware">Hardware Failure</option>
+              <option value="software">Software Issue</option>
+              <option value="network">Network/Connectivity</option>
+              <option value="access">Access/Permissions</option>
+              <option value="printer">Printer/Print Queue</option>
+              <option value="email">Email/Exchange</option>
+            </select>
+      </div>
+          <div class="demo-field">
+            <label for="priority">Priority:</label>
+            <select id="priority">
+              <option value="">Select priority...</option>
+              <option value="critical">Critical (P1)</option>
+              <option value="high">High (P2)</option>
+              <option value="medium">Medium (P3)</option>
+              <option value="low">Low (P4)</option>
+            </select>
+      </div>
+          <button id="calculateBtn" class="btn btn-primary">Calculate</button>
+      </div>
+        <div id="demo-result" class="demo-result">
+          <div class="result-header">
+            <h4>Recommended Action</h4>
+          </div>
+          <div class="result-content">
+            <p id="recommendedAction"></p>
+            <div class="sla-info">
+              <div class="sla-row">
+                <strong>Response SLA:</strong> <span id="responseSLA"></span>
+              </div>
+              <div class="sla-row">
+                <strong>Resolution SLA:</strong> <span id="resolutionSLA"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="demo-next-steps" class="demo-next-steps">
+          <h4>Recommended Next Steps</h4>
+          <ul id="nextStepsList"></ul>
+        </div>
+      </div>
+      <p class="demo-explanation">
+        This demo simulates how IT service desks prioritise incidents based on impact and urgency to meet SLA targets. 
+        It reflects real-world triage logic used in enterprise support environments.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Scenario Section -->
+  <section id="scenario" class="section">
+    <div class="container">
+      <h2 class="section-title">Incident Response Simulator</h2>
+      <div class="scenario-wrapper fade-in">
+        <div id="scenario-intro" class="scenario-intro">
+          <p class="scenario-intro-text">
+            Practice real-world IT service desk decision-making with interactive scenarios.
+          </p>
+          <button id="startScenarioBtn" class="btn btn-secondary">Try Interactive Scenario</button>
+        </div>
+
+        <div id="scenario-content" class="scenario-content hidden">
+          <div class="scenario-header">
+            <h3 id="scenario-title">Incident Scenario</h3>
+            <button id="endScenarioBtn" class="btn-end">End Scenario</button>
+      </div>
+
+          <div class="scenario-incident">
+            <div class="incident-info">
+              <div class="info-item">
+                <strong>Issue:</strong>
+                <span id="incident-issue"></span>
+      </div>
+              <div class="info-item">
+                <strong>Users Affected:</strong>
+                <span id="incident-users"></span>
+      </div>
+              <div class="info-item">
+                <strong>Business Impact:</strong>
+                <span id="incident-impact"></span>
+      </div>
+      </div>
+    </div>
+    
+          <div class="scenario-question">
+            <h4>What is your first action?</h4>
+            <div id="scenario-actions" class="scenario-actions"></div>
+          </div>
+
+          <div id="scenario-result" class="scenario-result hidden">
+            <div class="result-header">
+              <h4>Evaluation</h4>
+            </div>
+            <div class="result-content">
+              <div class="result-status">
+                <strong>Choice:</strong> <span id="result-choice"></span>
+                <span id="result-correctness" class="correctness-badge"></span>
+              </div>
+              <div class="result-details">
+                <p><strong>SLA Impact:</strong> <span id="result-sla"></span></p>
+                <p><strong>Escalation:</strong> <span id="result-escalation"></span></p>
+                <p class="result-explanation"><strong>Explanation:</strong> <span id="result-explanation"></span></p>
+              </div>
+              <button id="tryAnotherBtn" class="btn btn-primary">Try Another Scenario</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="scenario-explanation">
+        This interactive scenario demonstrates structured incident response and prioritisation logic used in real IT service desk environments.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Story Mode Section -->
+  <section id="story-mode" class="section">
+    <div class="container">
+      <h2 class="section-title">Story Mode: Get to Know Me</h2>
+      <div class="story-wrapper fade-in">
+        <div id="story-intro" class="story-intro">
+          <p class="story-intro-text">
+            Take an interactive journey through my professional background and expertise.
+          </p>
+          <button id="startStoryBtn" class="btn btn-primary">Start Story</button>
+        </div>
+
+        <div id="story-content" class="story-content hidden">
+          <div class="story-panel">
+            <div class="story-header">
+              <div class="story-progress">
+                <span id="story-progress-text">Slide 1 of 6</span>
+      </div>
+              <div class="story-hint">Use ← → keys</div>
+      </div>
+  
+            <div class="story-slides">
+              <!-- Slide 1: Welcome -->
+              <div class="story-slide active" data-slide="1">
+                <h3>Welcome</h3>
+                <p>I'm Kushal Gautam — Software Developer | Systems & IT Support Engineer based in Sydney. I support users, fix systems, and build web apps that solve real business problems.</p>
+      </div>
+  
+              <!-- Slide 2: Choose Path -->
+              <div class="story-slide" data-slide="2">
+                <h3>Choose Your Path</h3>
+                <p>Select a track to explore my experience:</p>
+                <div class="path-buttons">
+                  <button class="path-btn" data-track="support">IT Support Track</button>
+                  <button class="path-btn" data-track="dev">Software Developer Track</button>
+                  <button class="path-btn" data-track="freelance">Freelancing Track</button>
+      </div>
+  </div>
+
+              <!-- Slide 3: Skills (Dynamic) -->
+              <div class="story-slide" data-slide="3">
+                <h3>Skills & Expertise</h3>
+                <div id="skills-content" class="dynamic-content">
+                  <p>Select a track to see relevant skills.</p>
+  </div>
+  </div>
+
+              <!-- Slide 4: Proof / Wins (Dynamic) -->
+              <div class="story-slide" data-slide="4">
+                <h3>Key Achievements</h3>
+                <div id="achievements-content" class="dynamic-content">
+                  <ul class="achievements-list">
+                    <li>95%+ SLA compliance (Kyocera)</li>
+                    <li>Supported 200+ users across mixed environments</li>
+                  </ul>
+                  <div id="track-achievements"></div>
+  </div>
+  </div>
+
+              <!-- Slide 5: Projects -->
+              <div class="story-slide" data-slide="5">
+                <h3>Projects</h3>
+                <div id="projects-content" class="dynamic-content">
+                  <div class="project-item" data-track="dev">
+                    <strong>Fresh Mart Loyalty Portal</strong> (Capstone) — Full-Stack Loyalty & Rewards System
+  </div>
+                  <div class="project-item" data-track="dev">
+                    <strong>Stamzy</strong> — QR-based loyalty platform
+  </div>
+                  <div class="project-item" data-track="freelance">
+                    <strong>Gilly's Café</strong> — <a href="https://www.gillyscafe.com" target="_blank" rel="noopener">https://www.gillyscafe.com</a>
+  </div>
+                  <div class="project-item" data-track="freelance">
+                    <strong>Coffee Club demo</strong> — <a href="https://coffeeclub-theta.vercel.app" target="_blank" rel="noopener">https://coffeeclub-theta.vercel.app</a>
+  </div>
+  </div>
+</div>
+
+              <!-- Slide 6: Contact -->
+              <div class="story-slide" data-slide="6">
+                <h3>Let's Connect</h3>
+                <div class="contact-details">
+                  <p><strong>Email:</strong> gautamkushal34@gmail.com</p>
+                  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kushal-gautam-9257b316a" target="_blank" rel="noopener">linkedin.com/in/kushal-gautam-9257b316a</a></p>
+                  <p><strong>GitHub:</strong> <a href="https://github.com/KushGam" target="_blank" rel="noopener">github.com/KushGam</a></p>
+      </div>
+                <div class="story-cta">
+                  <a href="./assets/Kushal_Gautam_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                  <a href="mailto:gautamkushal34@gmail.com" class="btn btn-secondary">Email Me</a>
+      </div>
+      </div>
+      </div>
+
+            <div class="story-controls">
+              <button id="prevBtn" class="btn-nav" disabled>← Previous</button>
+              <button id="nextBtn" class="btn-nav">Next →</button>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content fade-in">
+        <p>Open to opportunities, collaborations, and freelance work.</p>
+      <div class="contact-info">
+          <a href="mailto:gautamkushal34@gmail.com" class="contact-link">
+            <strong>Email:</strong> gautamkushal34@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/kushal-gautam-9257b316a" target="_blank" rel="noopener" class="contact-link">
+            <strong>LinkedIn:</strong> linkedin.com/in/kushal-gautam-9257b316a
+          </a>
+          <a href="https://github.com/KushGam" target="_blank" rel="noopener" class="contact-link">
+            <strong>GitHub:</strong> github.com/KushGam
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kushal Gautam</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
